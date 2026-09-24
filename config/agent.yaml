@@ -1,0 +1,19 @@
+# Agent Manifest - AgentRegistry static entry point.
+# Root-level keys only; `class` is a single dotted import path.
+# Runtime-tunable parameters live in config/config.yaml, not here.
+
+id: CMN-C1-087
+name: CodebaseOnboardingSummaryAgent
+namespace: cmn
+version: 1.0.0
+enabled: true
+description: CodebaseOnboardingSummaryAgent
+class: src.graph.graph.CodebaseOnboardingSummaryAgent
+category: Cat 1
+industry: CMN
+base_type: DocGenerationAgent
+generation_mode: deterministic
+required_trust_level: INTERNAL
+requires:
+  secrets: []
+  extras: []
